@@ -1,104 +1,199 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+class external:
 
-# C extensions
-*.so
+    def help():
+        print('if bot dont understand you please write correct')
+        nam = input('if you want to explore the colculator write "calc"')
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+    def calc():
+        num1 = float(input('enter first number '))
+        num2 = float(input('enter second number '))
+        result=0
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+        rf = input('what simple you want to use? + , - , * or /')
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+        if rf=='+':
+            print('ok , this is conculator! but now only with "+"')
+            result=str(num1+num2)
 
-# Translations
-*.mo
-*.pot
+        if rf=='-':
+            print('ok , this is conculator! but now only with "-"')
+            result=str(num1-num2)
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
+        if rf=='*':
+            print('ok , this is conculator! but now only with "*"')
+            result=str(num1*num2)
 
-# Flask stuff:
-instance/
-.webassets-cache
+        if rf=='/':
+            print('ok , this is conculator! but now only with "/"')
+            result=str(num1/num2)
 
-# Scrapy stuff:
-.scrapy
+        print('The result is '+ result)
 
-# Sphinx documentation
-docs/_build/
+    def fail():
+        file = open("newfile.txt", "w")
+        wrtt = input('write something')
+        file.write(wrtt)
+        file.close()
+        file = open("newfile.txt", "r")
+        print(file.read())
+        file.close()
 
-# PyBuilder
-target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
 
-# pyenv
-.python-version
+nam = input('if you need help write "help"')
 
-# celery beat schedule file
-celerybeat-schedule
+nam = input('if you want to create the file write "fail"')
+if nam=="fail":
+    external.fail()
 
-# SageMath parsed files
-*.sage.py
+if nam == "help":
+    external.help()
+    if nam=="calc" :
+        external.calc()
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+nam = input('if you want to explore the colculator write "calc"')
+if nam == "calc" :
+    external.calc()
 
-# Spyder project settings
-.spyderproject
-.spyproject
+pri = input('hello')
+if pri=='hello' or 'Hi' or 'you' :
 
-# Rope project settings
-.ropeproject
+    print('ok but what is the weather today? ')
+    h = float(input(' 1.solnecno 2.oblacno 3.pasmurno '))
 
-# mkdocs documentation
-/site
+    print('How are you today?')
+    b = float(input('1.fine , 2.so so , 3.bad'))
+    if b=='1':
+        print('i am to')
+        c=input('so haw you should named me?  ')
+        print('Oh Thank you , i am twoya ',c)
+    if b=='2':
+        print('so , but i am great')
+    if b=='3':
+        print('you should be merry')
 
-# mypy
-.mypy_cache/
+    nam = input('if you love my you can ask my haw i feel!')
+
+    import random
+    a=random.randint(1,3)
+    mn = (h+b+a)/3
+    if mn==1 :
+        print('today i have good mood')
+    if mn==2 :
+         print('today i have so so mood')
+    if mn==3 :
+        print('today i have bad mood')
+
+
+    if mn==2 :
+        print('Hello Boris')
+
+        print('Sorry i cant speak with you great in eanglish... can we speak in russian lenguage?')
+        j = input('can we speak in russian lenguage?  ')
+        if j=='yes':
+            print('Fuck , fucking pyscripter cant read russian lenguage')
+        if j=='no':
+            print('ok  ')
+        u=input('so , what you doing now  ')
+        if u=='nothing':
+            print('that you want see any films?')
+            p=input('yes or no  ')
+            if p=='yes':
+                print('what type of films did you want for watch?')
+                j=input('1.horror 2.fantascik 3.documintal 4.comedy  ')
+                if j=='1':
+                    print('you can see (IT ; heloin ; ...) ')
+                if j=='2':
+                    print('you can see about holly bible , that is fantastic')
+                if j=='3':
+                    ('i know 2 aqwsome documental films - 1.geosthorm 2.djadj vasja i sobaka')
+                if j=='4':
+                    print('first comedy what i know is (good teacher)')
+            else:
+                print('so ok if you cant do any think did you want to learn math? ')
+                m = input('yes or no?  ')
+                if m=='yes':
+                    print('but i dont want AHAHAHAHAH (my admin didnt want write this code)')
+                if m=='no':
+                    print('so... ok you must be stupid ahahah ')
+        spb = input('you want speak with me?')
+        if spb=='yes' :
+            print('okey')
+            print('write my code to speak with me longer')
+        else:
+            print('okey... good bay')
+            file = open("sheet.txt")
+            cont = file.read()
+            print(cont)
+            file.close()
+
+    if mn==1 :
+                import random
+                a=random.randint(1,3)
+                if a==1 :
+                    print('Hello honney')
+                if a==2 :
+                    print('hello my bunny')
+                if a==1 :
+                    print('hi dear')
+
+                print('Did you go for a wolk today?')
+                x = input('yes , no , i dont want tolk about this  ')
+                if x=='yes':
+                    print('so ,with whom?')
+                    c = input('with whom did you go for a walk? (Girl)  ')
+                    print('She is beautiful?')
+                    n = input('  ')
+                    if n=='yes':
+                        print('Thats awesome')
+                        if n=='no':
+                            print('you are fucking stupid boy , all girls are great')
+                        if n == 'i dont want tolk about this' :
+                            print('so ok bat i think you should talk with me!')
+                            n == input ('why not?')
+                        if n == 'i have bad day' :\
+                            print('okey i will make you day better')
+
+                if x=='no':
+                    print('why?')
+                    l = input('why did you sit home?  ')
+                    print('ok but what is the weather today? ')
+                    h = input('1.beautiful 2.oblacno 3.solnecno 4.pasmurno ')
+                    if h=='1':
+                        print('Ok , but if that true you should go for a walk today!')
+                    if h=='2':
+                        print('all is understand')
+                    if h=='3':
+                        print('Ok , but if that true you should go for a walk today!')
+                    if h=='4':
+                        print('that make tea , and speak with me!')
+
+                sle = input('do you want to sleep?')
+                if sle=='yes':
+                    print('thst go sleep')
+                if sle=='no':
+                    print('that write my code')
+
+
+    if mn==3 :
+                print('Hello ')
+
+                ji = input('i want to sleep , but you want to sleep? ')
+                if ji=='yes':
+                    print('ok.. I WILL KILL YOU WHAN YOU SLEEP!!!AHAH no ')
+                if ji=='no':
+                    print('oh , thats i should work((( ')
+                wasd = input('So whst about your girlfriend? bad or good  ')
+                if wasd=='bad':
+                    print('why ')
+                    ki = input('')
+                    print('i think that all should be great! ')
+                if wasd=='good':
+                    print('great! ')
+                tp = input('ok , i have new funcion ! did you want try it?')
+                if tp=='yes':
+                    nam = input('write "calc"')
+                if tp=='no':
+                    print('Ziza')
+                cv = input('i think thets great!')
